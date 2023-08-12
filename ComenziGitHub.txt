@@ -1,0 +1,47 @@
+1.git config --global user.name ---setare nume Git
+2.git config --global user.email --- setare email Git
+3.git config --global core.editor "code --wait" ---setare editor pentru Git
+4.git config --global -e ---open la gitconfig file in VSCode
+5.git config --global core.autocrlf true ---setare pentru utilzatorii mac/windows sa acceseze codul altor utilizatori mac/windows in git fara a folosit \r\n sau \n
+6.git config --help ---comanda pentru a vedea toate comenzile available cu "git config" command
+7.git config --h ----aceeasi comanda + optiuni
+8.mkdir ---creare director
+9.cd ---accesare director
+10.git init ---initializare empty git
+11.ls ---vizualizare files
+12.ls -a ---vizualizare a tuturor fisierelor
+13.open .git deschidere git in folder
+14.rm -rf .git ---eliminare git repository
+15.git status ---vizualizare status repository cu toare filele
+16. git add --- adaugare fisiere la git folder tocmai creat mai devreme
+17.git add .  ---fisirele s-au adaugat in staging area 
+18git world >>file1.txt ---modificare fisier txt
+19.git commit ---adaugare mesaje 
+20.mv ----comanda pentru modificare nume files
+21.remove ---delete a file or a directory
+22.git rm -h ------help pentru comanda de remove
+23.git status ---status pentru git
+24.git status -s ---comanda mai scurta la vizualizare cu un short status in stanga fisierului in CMD
+25.git add gitingore ---adaugare fisier de ignorare a anumitor fisiere
+26.git diff --staged ----putem vedea toate fisierele staged iar output-ul va fi :
+diff --git a/bin/app.bin b/bin/app.bin
+index f2aa86d..9eb3931 100644
+--- a/bin/app.bin
++++ b/bin/app.bin
+@@ -1 +1 @@
+-hello
++test
+diff --git a/file1.js b/file1.js
+new file mode 100644
+index 0000000..7f1f4af
+--- /dev/null
++++ b/file1.js
+@@ -0,0 +1 @@
++sky
+27.git config --global diff.tool "nume tool" ----configurare tool pentru git
+28. git config --global difftool.vscode.cmd "code --wait --diff      -------wait este pentru cand dorim sa nu se inchide fisierul vscode pana cand am terminat de modificat fisierul .,diff pentru ce diffing
+29. git config --global -e ---editare global config settings
+30.git difftool  ---comparare a tuturor filelor ce le avem in working directory
+31.git log --commits history command
+32. git log --oneline --- commits history command pentru a vedea intr-i simgura linie fiecare commit
+33. git ls-tree HEAD~1 --comanda pentru vizualizare sub forma "100644 blob d9ec3be28b040345a707bc9ed88a9b0d3de339cb    .gitingore" a unui director
